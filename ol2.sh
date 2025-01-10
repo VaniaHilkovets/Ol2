@@ -31,10 +31,6 @@ else
     print_message "${GREEN}" "curl уже установлен."
 fi
 
-# Отображаем логотип
-print_message "${CYAN}" "Отображаем логотип..."
-curl -s https://raw.githubusercontent.com/noxuspace/cryptofortochka/main/logo_club.sh | bash || print_message "${RED}" "Не удалось загрузить логотип."
-
 # Проверка и установка bc
 if ! command -v bc &> /dev/null; then
     print_message "${YELLOW}" "Устанавливаем bc..."
